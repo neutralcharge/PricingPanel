@@ -1,0 +1,150 @@
+body{
+    background-color: #60A9Ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#canvas{
+    background-color: white;
+    margin:auto;
+    margin-top: 150px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 280px;
+}
+#personal{
+    border-bottom: 2px solid #e1f1ff;
+
+}
+h2{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#smallteam{
+    border-bottom: 2px solid #e1f1ff;
+}
+
+.about{
+    margin: 50px 0 25px;
+    color: #016ff9;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.a{
+    border-top: 1px solid #e1f1ff;
+
+}
+.price{
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    display: block;
+    font-weight: 700;
+}
+.rate{
+    border: 1px solid #016ff9;
+    border-radius: 5px;
+    padding: 15px 35px;
+    display: inline-block;
+    margin: 20px;
+    transition: background-color 200ms ease-in-out;
+}
+.rate:hover,.rate:focus{
+    background-color: #e1f1ff;
+}
+.rate.solidbg{
+    background-color: #016ff9;
+    color: white;
+}
+.rate.solidbg:hover , .rate.solidbg:hover{
+    background-color: #e1f1ff;
+    color: #016ff9;
+}
+
+@media(min-width: 900px){
+    #canvas{
+        flex-direction: row;
+    }
+    #personal{
+        border-right: 1px solid #e1f1ff;
+        padding: 20px;
+    }
+    #smallteam{
+        border-right: 1px solid #e1f1ff;
+        padding: 20px;
+    }
+    #enterprise{
+        padding: 20px;
+    }
+}
+.navbar {
+    display: flex; 
+    justify-content: space-around; 
+    position:fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    color: white; 
+    padding: 10px 20px; 
+    list-style: none;
+    z-index: 99999;
+}
+
+#options{
+    transition: background-color 200ms ease-in-out;
+    border-radius: 5px;
+    padding: 15px 35px;
+}
+
+#options:hover{
+    color:#016ff9;
+    background-color: #e1f1ff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+.end {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position:fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;   
+    background-color: #e1f1ff; 
+    padding-top: 0px ;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+    .end {
+        font-size: 8px;
+    }
+    .navbar{
+        position: fixed;
+    }
+
+
+}
+
+
+
+  
+  
+
+ 
